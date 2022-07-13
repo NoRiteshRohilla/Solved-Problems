@@ -1,0 +1,7 @@
+class Solution:
+    def removeDuplicates(n, arr):
+        ans = [arr[0]]
+        for el in arr:
+            if ans[-1] != el:
+                ans.append(el)
+        return ans
